@@ -4,7 +4,6 @@ class TreeNode:
          self.val = x
          self.left = None
          self.right = None
-
 class Solution:
     def zigzagLevelOrder(self, root):
         """
@@ -32,17 +31,6 @@ class Solution:
                 quene.append([next[0].right,next[1]+1])
         out.append(new)
         return out
-root=TreeNode(3)
-left=TreeNode(5)
-right=TreeNode(7)
-root.left=left
-root.right=right
-right_1=TreeNode(20)
-left_1=TreeNode(9)
-right.left=left_1
-right.right=right_1
-slu=Solution()
-slu.zigzagLevelOrder(root)
 
 
 
